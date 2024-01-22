@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        <div>
+        <ul>
+            <li class="submenu">
+                <img id="img-carrito" src="/public/images/car.svg" alt="car">
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+   
+<div class="header-content container">
+    <div class="header-txt">
+        <span>Bienvenido a nuestra tienda</span>
+        <h1>Ofertas especiales</h1>
+        <p>
+            Aprovecha la oportunidad de ser una señora de las Lomas con estas increibles ofertas de elegancia!
+        </p>
+        <div class="butons">
+            <a href="#" class="btn-1">informacion</a>
+            <a href="#" class="btn-1">leer mas</a>
+        </div>
+    </div>
+    <div class="header-img">
+        <img src="/public/images/bag.png" alt="">
+    </div>
+</div>
+
+</header>
+
+<section class="oferts container">
+ <div class="ofert-1 b1">
+        <div class="ofert-txt">
+            <h3>Barbie modern</h3>
+            <a href="#">Leer mas</a>
+        </div>
+        <div class="ofert-img">
+            <img src="/public/images/s1.png" alt="">
+        </div>
+    </div>
+    <div class="ofert-1 b2">
+        <div class="ofert-txt">
+            <h3>Barbie amore</h3>
+            <a href="#">Leer mas</a>
+        </div>
+        <div class="ofert-img">
+            <img src="/public/images/s2.png" alt="">
+        </div>
+    </div>
+ <div class="ofert-1 b3">
+        <div class="ofert-txt">
+            <h3>Barbie color</h3>
+            <a href="#">Leer mas</a>
+        </div>
+        <div class="ofert-img">
+            <img src="/public/images/s3.png" alt="">
+        </div>
+    </div>
+</section>
+
+    <main class="products container">
+
+         <h2>Productos</h2>
+
+      <div class="box-container" id="lista-1">
+
+        <div class="box">
+            <img src="/public/images/pr1.png" alt="Bolsa Azul Casual">
+            <div class="product-txt">
+                <h3>Azul Casual</h3>
+                <p>Perfecta para un look relajado</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/public/images/pr2.png" alt="Bolsa Urbana Chic">
+            <div class="product-txt">
+                <h3>Urbana Chic</h3>
+                <p>Compañera ideal para la jungla urbana, con detalles contemporáneos</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr3.png" alt="Bolsa Vintage Clásica">
+            <div class="product-txt">
+                <h3>Vintage Clásica</h3>
+                <p>Retro y elegante, rememora la moda atemporal</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr4.png" alt="Bolsa Executive Moderna">
+            <div class="product-txt">
+                <h3>Executive Moderna</h3>
+                <p>Ideal para la mujer de negocios, combina funcionalidad y estilo</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr5.png" alt="Bolsa Casual Sport">
+            <div class="product-txt">
+                <h3>Casual Sport</h3>
+                <p>Para el día a día activo, resistente y versátil</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr6.png" alt="Bolsa Nocturna Glam">
+            <div class="product-txt">
+                <h3>Nocturna Glam</h3>
+                <p>Brillo y sofisticación para tus salidas nocturnas</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr7.png" alt="Bolsa Boho Chic">
+            <div class="product-txt">
+                <h3>Boho Chic</h3>
+                <p>Libertad y estilo con un toque bohemio</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr8.png" alt="Bolsa Playa Verano">
+            <div class="product-txt">
+                <h3>Playa Verano</h3>
+                <p>Colorida y espaciosa, perfecta para un día bajo el sol</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr9.png" alt="Bolsa Mini Noche">
+            <div class="product-txt">
+                <h3>Mini Noche</h3>
+                <p>Pequeña y elegante, lleva solo lo esencial con estilo</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr10.png" alt="Bolsa Tote Clásica">
+            <div class="product-txt">
+                <h3>Tote Clásica</h3>
+                <p>La tote que no puede faltar, combina con cualquier atuendo</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/public/images/pr11.png" alt="Bolsa Satchel Elegante">
+            <div class="product-txt">
+                <h3>Satchel Elegante</h3>
+                <p>Clásica y funcional, con un toque de distinción profesional</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="11" id="11">Agregar al carrito</a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="/public/images/pr12.png" alt="Bolsa Crossbody Urbana">
+            <div class="product-txt">
+                <h3>Crossbody Urbana</h3>
+                <p>Práctica y segura para llevar todo lo necesario sin perder el estilo</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+            </div>
+        </div>
+        <div id="wallet_container"></div>  
+    </div>
+
+
+    <div class="btn-2" id="load-more">Cargar Mas</div>
+    </main>
+
+<section class="testimonial container">
+    <span>Testimoniales</span>
+    <h2>Que opinan nuestros clientes</h2>
+    <div class="testimonial-content">
+        <div class="testimonial-1">
+            <p>
+                "Me encanta mi 'Barbie Chic'. No solo es hermosa y práctica, sino que también es el tema de conversación en todas mis reuniones. ¡Definitivamente regresaré por más!"
+            </p>
+            <img src="images/starts.png" alt="">
+            <h4>Carla Méndez</h4>
+        </div>
+        <div class="testimonial-1">
+            <p>
+                "La calidad y el estilo de las bolsas son inigualables. Cada vez que llevo mi bolsa 'Chanel Clásica' me siento como una estrella de cine. ¡Gracias por estos diseños fabulosos!"
+            </p>
+            <img src="images/starts.png" alt="">
+            <h4>Lorena Mayorga</h4>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Bolsas</h3>
+            <ul>
+                <li><a href="#">Totes</a></li>
+                <li><a href="#">Bandoleras</a></li>
+                <li><a href="#">Clutches</a></li>
+                <li><a href="#">Mochilas</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Accesorios</h3>
+            <ul>
+                <li><a href="#">Carteras</a></li>
+                <li><a href="#">Gafas de sol</a></li>
+                <li><a href="#">Cinturones</a></li>
+                <li><a href="#">Pañuelos</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Calzado</h3>
+            <ul>
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Botas</a></li>
+                <li><a href="#">Sandalias</a></li>
+                <li><a href="#">Zapatos de tacón</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Ropa</h3>
+            <ul>
+                <li><a href="#">Vestidos</a></li>
+                <li><a href="#">Chaquetas</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Blusas</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
